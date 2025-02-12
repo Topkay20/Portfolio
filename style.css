@@ -1,0 +1,70 @@
+.root {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+  }
+  body {
+    width: 100%;
+    background-color: #1C1816;
+    color: white;
+  }
+
+
+.fond_feuille {
+  background-image: url(image/feuille_accueil.png);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.nav_container {
+  max-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.logo_gauche{
+  width: 10%;
+  display: flex;
+  justify-content: baseline;
+}
+.logo_gauche img {
+  max-height: 30px;
+}
+.nom_droite{
+  display: flex;
+  justify-content: end;
+  width: 10%;
+  color: white;
+}
+.nom_droite h1{
+  font-size: 16px;
+}
+.navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.navbar li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px 30px;
+  text-decoration: none;
+  background-color: bisque;
+  border-radius: 50px;
+  margin: 0 10px;
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+}
