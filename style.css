@@ -3,6 +3,9 @@
   font-weight: 300;
   font-style: normal;
   color: white;
+  font-size: 16px;
+  font-size: 20px;
+  font-size: 24px;
 }
 body {
   margin: 0;
@@ -17,9 +20,31 @@ p {
   margin: 2px;
 }
 .titre {
-  margin-bottom: 6px;
-  font-weight: 300;
+  background: rgba(0, 0, 0, 65%);
+  padding-right: 3%;
+  padding-left: 3%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   font-size: 24px;
+}
+.text {
+  background: rgba(0, 0, 0, 65%);
+  padding-right: 7%;
+  padding-left: 7%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .nav_container {
@@ -66,6 +91,18 @@ p {
   z-index: 10;
 }
 
+.image {
+  display: flex;
+  width: 60vw;
+  aspect-ratio: 16/9;
+  background-size: cover;
+  background-position: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
 #accueil {
   display: flex;
   background-color: #1c1816;
@@ -97,24 +134,56 @@ p {
   font-size: 20px;
   font-weight: 300;
 }
-.text {
-  background: rgba(0, 0, 0, 65%);
-  padding-right: 12%;
-  padding-left: 12%;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  border-radius: 15px;
-  margin-bottom: 60px;
+
+#a_propos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-
 
 #a_propos .image {
   background-image: url(image/cheminautomne.jpg);
-  height: 100%;
+}
+
+#a_propos .text {
+  margin: 2%;
+}
+
+#projets {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.projet_conteneur {
+  background: rgba(255, 255, 255, 0.65);
+  width: 50vw;
+  height: 30vh;
+  margin: 20px;
+  border-radius: 20px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}
+#projets .projet_image {
+  display: flex;
+  background-image: url(image/WorkinProgress.webp);
+  width: 20vw;
+  height: 40vh;
   background-size: cover;
   background-position: center;
-  margin: 10%;
+  margin: 30px;
+  border-radius: 15px;
+}
+
+#competences {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
