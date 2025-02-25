@@ -1,14 +1,26 @@
 .root {
-    font-family: "Roboto", serif;
-    font-weight: 400;
-    font-style: normal;
-    color: white;
-  }
-  body {
-    margin: 0;
-    background-color: #1C1816;
-    color: white;
-  }
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-style: normal;
+  color: white;
+}
+body {
+  margin: 0;
+  background-color: #1c1816;
+  color: white;
+  font-family: "Roboto", serif;
+  font-weight: 300;
+  font-size: 16px;
+  font-style: normal;
+}
+p {
+  margin: 2px;
+}
+.titre {
+  margin-bottom: 6px;
+  font-weight: 300;
+  font-size: 24px;
+}
 
 .nav_container {
   width: 100%;
@@ -17,11 +29,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-
-  padding-left: 2%;
-  padding-right: 2%;
 }
-.logo_gauche{
+.logo_gauche {
   width: 10%;
   display: flex;
   justify-content: baseline;
@@ -29,41 +38,37 @@
 .logo_gauche img {
   max-height: 30px;
 }
-.nom_droite{
+.nom_droite {
   display: flex;
   justify-content: end;
   width: 10%;
-  color: white;
 }
-.nom_droite h1{
+.nom_droite h1 {
   font-size: 16px;
 }
 .navbar {
   display: flex;
   list-style-type: none;
-  margin: 0;
+  margin-top: 3%;
   padding: 0;
   overflow: hidden;
 }
 .navbar li a {
   display: block;
   color: black;
+  font-weight: 400;
   text-align: center;
-  padding: 10px 30px;
+  padding: 9px 25px;
   text-decoration: none;
-  background-color: bisque;
-  border-radius: 50px;
-  margin: 0 10px;
+  background: rgba(242, 225, 202, 75%);
+  border-radius: 13px;
+  margin: 0 7px;
+  z-index: 10;
 }
-
-
-section {
-
-}
-
 
 #accueil {
   display: flex;
+  background-color: #1c1816;
   background-image: url(image/feuille_accueil.png);
   padding-top: 7%;
   height: 100%;
@@ -71,11 +76,45 @@ section {
   background-position: center;
   flex-direction: column;
   align-items: center;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
 }
-.photo_profil{
+.photo_profil {
   display: flex;
   justify-content: center;
+  margin-top: 3%;
+  margin-bottom: 3%;
 }
 .photo_profil img {
-  max-width: 20%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.text .text1 {
+  margin-bottom: 10%;
+  font-size: 20px;
+  font-weight: 300;
+}
+.text {
+  background: rgba(0, 0, 0, 65%);
+  padding-right: 12%;
+  padding-left: 12%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 15px;
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+#a_propos .image {
+  background-image: url(image/cheminautomne.jpg);
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  margin: 10%;
 }
