@@ -437,12 +437,12 @@ box-shadow: 0 14px 8px rgba(0, 0, 0, 0.6);
 }
 
 .footer-content {
-  max-width: 1200px; /* Largeur maximale du contenu */
-  margin: 0 auto; /* Centrer horizontalement */
+  max-width: 1200px; 
+  margin: 0 auto; 
   padding: 0 20px;
 }
 
-/* Style des liens sociaux */
+
 .reseaux {
   margin-top: 10px;
 }
