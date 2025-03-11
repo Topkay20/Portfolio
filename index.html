@@ -20,17 +20,29 @@
       </div>
       <nav>
         <ul class="navbar">
-          <li><a href="accueil">Accueil</a></li>
-          <li><a href="à propos">À propos</a></li>
-          <li><a href="projets">Projets</a></li>
-          <li><a href="compétences">Compétences</a></li>
-          <li><a href="contact">Contact</a></li>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#a_propos">À propos</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="nom_droite">
         <p>FLORENT<br />Valentin</p>
       </div>
+
     </header>
+    <button class="burger"></button>
+    <nav class="menu_burger" id="mobile-menu">
+      <ul>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#a_propos">À propos</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+   
     <section id="accueil" class="fond_feuille">
       <p class="titre">Bienvenue dans mon Portfolio</p>
       <div class="photo_profil">
@@ -46,26 +58,27 @@
     <section id="a_propos">
       <div class="titre">En quelques phrases..</div>
       <div class="image">
-      <div class="text">
-        <p>
-          Après l'obtention d'un BTS en management commercial, j’ai souhaité
-          allier mon travail à ma passion.
-        </p>
-        <p>
-          Passionné par l’informatique, j’y consacre une grande partie de mon
-          temps afin d’y approfondir mes connaissances.
-        </p>
-        <p>
-          Dans un monde où l’informatique est devenu un pilier essentiel de
-          notre société, mon ambition est d’acquérir une expertise globale dans
-          ce domaine.
-        </p>
-        <p>
-          Cela inclut des compétences en réseau et cybersécurité, mais également
-          en hardware, programmation et bien d’autres aspects techniques.
-        </p>
+        <div class="text">
+          <p>
+            Après l'obtention d'un BTS en management commercial, j’ai souhaité
+            allier mon travail à ma passion.
+          </p>
+          <p>
+            Passionné par l’informatique, j’y consacre une grande partie de mon
+            temps afin d’y approfondir mes connaissances.
+          </p>
+          <p>
+            Dans un monde où l’informatique est devenu un pilier essentiel de
+            notre société, mon ambition est d’acquérir une expertise globale
+            dans ce domaine.
+          </p>
+          <p>
+            Cela inclut des compétences en réseau et cybersécurité, mais
+            également en hardware, programmation et bien d’autres aspects
+            techniques.
+          </p>
+        </div>
       </div>
-    </div>
     </section>
     <section id="projets">
       <div class="titre">
@@ -127,9 +140,13 @@
       <div class="titre">Contact</div>
       <div class="contact_content">
         <p>Nom</p>
-        <div class="box nom_prenom" contenteditable="true">Nom et Prénom</div>
+        <div class="box nom_prenom" contenteditable="true">
+          <p>Nom et Prénom</p>
+        </div>
         <p>Adresse Email</p>
-        <div class="box mail" contenteditable="true">adresse@gmail.com</div>
+        <div class="box mail" contenteditable="true">
+          <p>adresse@gmail.com</p>
+        </div>
         <p>Message</p>
         <div class="box message" contenteditable="true">
           <p>Tapez votre message ici..</p>
@@ -145,7 +162,7 @@
             >Github <img src="image/githubblanc.png" alt="Github"
           /></a>
           <a
-            href="www.linkedin.com/in/valentin-florent-88a169282"
+            href="https://www.linkedin.com/in/valentin-florent-88a169282/"
             target="_blank"
             >Linkedin <img src="image/linkedinblanc.png" alt="Linkedin"
           /></a>

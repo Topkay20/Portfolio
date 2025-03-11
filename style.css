@@ -7,14 +7,18 @@
   font-size: 20px;
   font-size: 24px;
 }
+
 body {
   margin: 0;
-  background-color: #1B1A17;
+  background-color: #1b1a17;
   color: white;
   font-family: "Roboto", serif;
   font-weight: 300;
   font-size: 16px;
   font-style: normal;
+}
+html {
+  scroll-behavior: smooth;
 }
 p {
   margin: 2px;
@@ -29,7 +33,7 @@ p {
   align-items: center;
   text-align: center;
   font-size: 28px;
-  font-weight:500;
+  font-weight: 500;
 }
 
 .text {
@@ -46,6 +50,60 @@ p {
   text-align: center;
 }
 
+.burger {
+  position: fixed;
+  display: none;
+  width: 50px;
+  height: 50px;
+  top: 10px;
+  right: 10px;
+  background-image: url(image/burger-bar.png);
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+.burger:active {
+  background-image: url(image/burger-bar_black.png);
+}
+.menu_burger {
+  /*
+  visibility: hidden;
+  opacity: 0;
+  */
+  transform: translateY(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  position: fixed;
+  top: 60px;
+  right: 10px;
+  width: 200px;
+  background: rgba(0, 0, 0, 8.5);
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px 0;
+  pointer-events: none; /* Empêche les clics lorsque caché */
+  z-index: 20;
+}
+.menu_burger.show {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+.menu_burger ul {
+  list-style-type: none;
+  padding: 0;
+}
+.menu_burger ul li {
+  padding: 10px;
+}
+.menu_burger ul li a {
+  text-decoration: none;
+  display: block;
+  color: white;
+}
 .nav_container {
   width: 100%;
   position: fixed;
@@ -87,7 +145,7 @@ p {
   text-align: center;
   padding: 7px 25px;
   text-decoration: none;
-  background: #24231F;
+  background: #24231f;
   border-radius: 13px;
   margin: 0 7px;
 }
@@ -164,7 +222,6 @@ p {
   justify-content: center;
   min-height: 100vh;
 }
-
 
 .caroussel_content {
   display: flex;
@@ -276,7 +333,7 @@ button.next {
   background-color: rgb(0, 0, 0, 90%);
   padding-right: 10%;
   padding-left: 10%;
-  border-radius: 2px;
+  border-radius: 10px;
   padding: 20px 110px;
 }
 .nav_projet li:hover {
@@ -297,7 +354,6 @@ button.next {
 }
 
 .grid {
-  width: 70vw;
   height: 70vh;
   margin-right: 15%;
   margin-left: 15%;
@@ -376,10 +432,13 @@ button.next {
   justify-content: center;
   height: 100vh;
 }
+#contact p {
+  font-size: 13px;
+}
 
 .contact_content {
   display: flex;
-  
+
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
@@ -400,9 +459,10 @@ button.next {
   padding-left: 10px;
   margin-bottom: 15px;
   margin-top: -8px;
-
+  padding-top: 3px;
+  padding-bottom: 3px;
 }
-.box.nom_prenom, 
+.box.nom_prenom,
 .box.mail {
   width: 100%;
   height: 60px;
@@ -415,33 +475,31 @@ button.next {
 }
 
 #contact button {
-margin-top: 30px;
-align-self: center;
-cursor: pointer;
-background-color: #c5c5c5;
-padding: 15px 30px;
-border-radius: 10px;
-box-shadow: 0 14px 8px rgba(0, 0, 0, 0.6);
+  margin-top: 30px;
+  align-self: center;
+  cursor: pointer;
+  background-color: #c5c5c5;
+  padding: 15px 30px;
+  border-radius: 10px;
+  box-shadow: 0 14px 8px rgba(0, 0, 0, 0.6);
 }
 
-
 #footer {
-  background-color: #000000; 
-  color: white; 
-  padding: 20px 0; 
-  text-align: center; 
+  background-color: #000000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
   position: relative;
   bottom: 0;
   width: 100%;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
 .footer-content {
-  max-width: 1200px; 
-  margin: 0 auto; 
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 0 20px;
 }
-
 
 .reseaux {
   margin-top: 10px;
@@ -461,4 +519,114 @@ box-shadow: 0 14px 8px rgba(0, 0, 0, 0.6);
   width: 30px;
 }
 
+/* Format téléphone */
+@media screen and (max-width: 600px) {
+  .burger {
+    display: inline-block;
+  }
+  .menu_burger {
+  }
+  #accueil {
+    gap: 10px;
+  }
+  .titre {
+    margin-bottom: 25px;
+    font-size: 20px;
+  }
+  #accueil .titre {
+    padding-top: 30px;
+    font-size: 24px;
+  }
+  #a_propos .image {
+    width: auto;
+    height: 400px;
+  }
+  #a_propos .text {
+    gap: 12px;
+    font-size: 12px;
+  }
+  .nav_container {
+    display: none;
+  }
+  .nav_projet {
+    flex-direction: column;
+  }
 
+  .nav_projet li {
+    padding: 7px 0px;
+  }
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-left: 0;
+    margin-right: 0;
+    width: 90%;
+  }
+  .carreau {
+    padding: 0;
+    font-size: 12px;
+  }
+  .carreau:nth-child(6) {
+    background-color: #6d6750;
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+  .carreau:nth-child(7) {
+    background-color: #934141;
+    grid-row: 4/5;
+    grid-column: 1/4;
+  }
+
+  #a_propos .image {
+    width: 90vw;
+  }
+  .caroussel1 {
+    display: none;
+  }
+  .caroussel-1 {
+    display: none;
+  }
+  .caroussel {
+    width: 80vw;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+  .projet_titre {
+    font-size: 20px;
+  }
+  .contact_content {
+    width: 70%;
+  }
+}
+/* Format tablette */
+@media screen and (min-width: 601px) and (max-width: 1023px) {
+  .burger {
+    display: inline-block;
+  }
+  .menu_burger {
+  }
+  .nav_container {
+    display: none;
+  }
+
+  #a_propos .image {
+    width: 90vw;
+  }
+  .caroussel1 {
+    display: none;
+  }
+  .caroussel-1 {
+    display: none;
+  }
+  .caroussel {
+    width: 80vw;
+    height: 50vh;
+  }
+
+  .nav_projet {
+    flex-direction: column;
+  }
+  .nav_projet li {
+    padding: 10px 100px;
+  }
+}
