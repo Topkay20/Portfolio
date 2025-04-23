@@ -6,12 +6,16 @@
     <title>Portoflio Valentin</title>
     <link rel="icon" href="image/monLogoclair.svg" />
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="nav_container">
@@ -21,6 +25,7 @@
       <nav>
         <ul class="navbar">
           <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#BTS">BTS</a></li>
           <li><a href="#a_propos">À propos</a></li>
           <li><a href="#projets">Projets</a></li>
           <li><a href="#competences">Compétences</a></li>
@@ -36,6 +41,7 @@
     <nav class="menu_burger" id="mobile-menu">
       <ul>
         <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#BTS">BTS</a></li>
         <li><a href="#a_propos">À propos</a></li>
         <li><a href="#projets">Projets</a></li>
         <li><a href="#competences">Compétences</a></li>
@@ -44,15 +50,70 @@
     </nav>
    
     <section id="accueil" class="fond_feuille">
-      <p class="titre">Bienvenue dans mon Portfolio</p>
-      <div class="photo_profil">
-        <img src="image/profil 2.jpg" alt="photo de profil" />
+      <div class="PHOTOetPRESENTATION">
+        <div class="photo_profil">
+          <img src="image/profil 2.jpg" alt="photo de profil" />
+        </div>
+        <div class="MOIetBTS">
+          <div class="MOI">
+          <p class="MOItitre">Valentin Florent</p>
+          <p>Étudiant en BTS SIO</p>
+          <p><b>S</b>ervice <b>I</b>nformatique aux <b>O</b>rganisations</p>
+          <a href="#BTS" class="fleche">
+          <p class="bienvenue">Bienvenue dans mon portfolio ▼ 
+          </p>
+        </a>
+          </div>
+        </div>
       </div>
-      <div class="text">
-        <p class="text1">FLORENT Valentin</p>
-        <p>Étudiant en 1er année de BTS</p>
-        <p>Service informatique aux organisations</p>
-        <p>(SIO)</p>
+    </section>
+    <section id="BTS">
+      <div class="presentationBTS">
+        <h3>Présentation du BTS SIO</h3>
+        <p>Le BTS SIO est une formation qui permet de répondre aux besoins informatiques des entreprises.</p>
+        <p>J'ai choisi la spécialité SISR, orientée vers l'administration des systèmes et réseaux.</p>
+      </div>
+      <div class="carouselBTS">
+        <div class="carouselBTS-inner">
+          <div class="carouselBTS-item active">
+            <img src="image/LinuxWindows.png" alt="Linux et Windows">
+            <div class="carouseltext">
+            <p>🐧Linux et Windows🪟</p>
+            <ul>
+              <li>Administration Windows & Linux</li>
+              <li>Installation, configuration, maintenance</li>
+              <li>Intégration en environnement mixte</li>
+              <li>Sécurité, gestion des utilisateurs, services réseau</li>
+            </ul>
+            </div>
+          </div>
+          <div class="carouselBTS-item">
+            <img src="image/switch.jpg" alt="Reseau">
+            <div class="carouseltext">
+              <p>🌐 Mise en place et <br> gestion d'un réseau 🖧</p>
+              <ul>
+                <li>Configuration de routeurs et switches</li>
+                <li>Gestion des sous-réseaux et adresses IP</li>
+                <li>Installation et configuration de VPN</li>
+                <li>Assurer la sécurité réseau et la gestion des pare-feux</li>
+              </ul>
+              </div>
+            </div>
+            <div class="carouselBTS-item">
+              <img src="image/Programmationphoto.jpg" alt="Langage de programmation">
+              <div class="carouseltext">
+                <p>Apprentissage des <br> langages de programmation</p>
+                <ul>
+                  <li>en attenteen attenteen attente</li>
+                  <li>en attenteen attenteen attente</li>
+                  <li>en attenteen attenteen attente</li>
+                  <li>en attenteen attenteen attente</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        <button class="prev" onclick="prevSlide()"><img src="image/fleche gauche.png" alt=""></button>
+        <button class="next" onclick="nextSlide()"><img src="image/fleche gauche.png" alt=""></button>
       </div>
     </section>
     <section id="a_propos">
