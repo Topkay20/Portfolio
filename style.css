@@ -107,7 +107,7 @@ p {
   justify-content: space-around;
   z-index: 10;
   background: rgb(0, 0, 0, 70%);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 70%);
 }
 .logo_gauche {
   width: 10%;
@@ -179,10 +179,14 @@ p {
   flex-direction: row;
   gap: 100px;
   align-items: center;
-  margin: 100px
+  justify-content: center;
+  margin: 100px;
+  width: 100%;
+  height: 60%;
 }
 
 .MOIetBTS {
+
   background: rgba(0, 0, 0, 65%);
   border-radius: 15px;
   display: flex;
@@ -190,12 +194,14 @@ p {
   align-items: center;
   text-align: center;
   padding: 20px;
+  width: auto;
+  height: auto;
 }
 .MOItitre {
     font-family: "Jacques Francois Shadow", serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: 60px;
     margin-bottom: 20px;
   }
 .bienvenue {
@@ -229,8 +235,8 @@ p {
 
 }
 .photo_profil img {
-  width: 250px;
-  height: 250px;
+  width: 350px;
+  height: 350px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 14px 8px rgba(0, 0, 0, 0.6);
@@ -247,22 +253,42 @@ p {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  margin-top: 5%;
 }
+
+.PRESENTATIONetCAROUSEL {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
 .presentationBTS {
+  width: 100vw;
+  position: relative;
+  z-index: 5;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin-top: 3%;
+  text-align: center;
+  justify-content: center;
+  top: -8px;
+  padding-top: 5px;
+  background: rgba(0, 0, 0, 70%);
+  box-shadow: 0 14px 8px rgba(0, 0, 0, 70%);
+}
+
+.BTSSIO{
+  font-size: 20px;
+  font-style: italic;
 }
 .carouselBTS {
-  display: flex;
   position: relative;
-  max-width: 60vw;
+  display: flex;
+  max-width: 70vw;
   margin: auto;
   overflow: hidden;
   border-radius: 10px;
-  background: rgba(0, 0, 0, 10%);
+  background: rgba(0, 0, 0, 50%);
+  box-shadow: 0 14px 8px rgba(0, 0, 0, 30%);
 }
 
 .carouselBTS-inner {
@@ -294,14 +320,18 @@ p {
   align-items: center;
 }
 .carouselBTS-item p {
+  position:relative;
   text-align: center;
   align-items: center;
-  font-size: 17px;
-  margin-bottom: 5%;
+  font-size: 25px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  transform: translateY(50%);
+  font-weight: bold;
 }
 .carouselBTS-item li {
-  font-size: 12px;
-  margin-top: 5%;
+  font-size: 20px;
+  margin-bottom: 5%;
 }
 
 button.prev, button.next {
@@ -309,39 +339,45 @@ button.prev, button.next {
   top: 50%;
   transform: translateY(-50%);
   background: transparent; /* Retire le fond du bouton */
-  color: transparent; /* Masque le texte */
   border: none; /* Retire la bordure */
   padding: 0; /* Annule le padding qui crée de l'espace supplémentaire */
   cursor: pointer;
   font-size: 0; /* Élimine l'espace occupé par le texte */
-  height: 50px;
-  width: 50px;
+  height: 5vh;
+  width: 5vw;
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 1; /* Assure que le bouton soit visible avec seulement l'image */
 }
-
 button.prev img,
 button.next img {
-  width: 20px; /* Ajuste la taille de l'image de la flèche */
-  height: 20px;
+  width: 40px; /* Ajuste la taille de l'image de la flèche */
+  height: 40px;
   object-fit: contain; /* L'image s'ajuste sans déformer le ratio */
-  filter: brightness(0) invert(1); /* Pour avoir des flèches blanches sur fond noir */
+  filter: brightness(0) invert(0.7); /* Pour avoir des flèches blanches sur fond noir */
+  transition: transform 0.1s ease;
 }
-
-
-  button.prev {
-    left: 8px;
+button.prev {
+    left: -3px;
   }
-
 button.next {
-    right: 8px;
+    right: -3px;
   }
- button.next img {
+button.next img {
     transform: rotate(180deg);
   }
+button.prev:hover,
+button.next:hover {
+  filter: brightness(0) invert(1);
+  }
 
+button.prev img:active {
+  transform: scale(0.95);  
+}
+button.next img:active {
+  transform: rotate(180deg) scale(0.95);
+}
 
 #a_propos {
   display: flex;
@@ -367,7 +403,7 @@ button.next {
   min-height: 100vh;
 }
 
-#projets .caroussel_content {
+/* #projets .caroussel_content {
   display: flex;
   justify-content: center;
 }
@@ -460,7 +496,7 @@ button.next {
 }
 #projets .caroussel1:hover {
   filter: blur(0px);
-}
+} */
 
 .nav_projet {
   display: flex;
