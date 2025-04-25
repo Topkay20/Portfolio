@@ -263,7 +263,7 @@ align-items: center;
 }
 
 .presentationBTS {
-  width: 100vw;
+  width: 80vw;
   position: relative;
   z-index: 5;
   display: flex;
@@ -271,9 +271,12 @@ align-items: center;
   text-align: center;
   justify-content: center;
   top: -8px;
-  padding-top: 5px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  margin-top: 30px;
   background: rgba(0, 0, 0, 70%);
-  box-shadow: 0 14px 8px rgba(0, 0, 0, 70%);
+  box-shadow: 0 14px 8px rgba(0, 0, 0, 30%);
+  border-radius: 10px;
 }
 
 .BTSSIO{
