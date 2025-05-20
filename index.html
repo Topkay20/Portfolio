@@ -21,37 +21,45 @@
     />
   </head>
   <body>
+
+                                        <!-- NAVBAR -->
+
     <header class="nav_container">
+
       <div class="logo_gauche">
         <img src="image/monLogoclair.svg" alt="logo" />
       </div>
+
       <nav>
         <ul class="navbar">
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#BTS">BTS</a></li>
-          <li><a href="#a_propos">À propos</a></li>
-          <li><a href="#projets">Projets</a></li>
-          <li><a href="#competences">Compétences</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Accueil</a></li>        
+        <li><a href="BTS.html">BTS SIO</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="patrimoine.html">Patrimoine</a></li>
+        <li><a href="synthese.html">Synthèse</a></li>
+        <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
-
-      <div class="nom_droite">
-        <p>FLORENT<br />Valentin</p>
-      </div>
     </header>
+
+                                        <!-- MENU BURGER -->
+
     <button class="burger"></button>
     <nav class="menu_burger" id="mobile-menu">
       <ul>
-        <li><a href="#accueil">Accueil</a></li>
-        <li><a href="#BTS">BTS</a></li>
-        <li><a href="#a_propos">À propos</a></li>
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">Accueil</a></li>        
+        <li><a href="BTS.html">BTS SIO</a></li>
+        <li><a href="veille.html">Veille</a></li>
+        <li><a href="patrimoine.html">Patrimoine</a></li>
+        <li><a href="synthese.html">Synthèse</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-    <section id="accueil" class="fond_feuille">
+
+
+                                                <!-- MOI -->
+
+    <section id="MOI" class="fond_feuille">
       <div class="PHOTOetPRESENTATION">
         <div class="photo_profil">
           <img src="image/profil 2.jpg" alt="photo de profil" />
@@ -61,77 +69,19 @@
             <p class="MOItitre">Valentin Florent</p>
             <p>Étudiant en BTS SIO</p>
             <p><b>S</b>ervice <b>I</b>nformatique aux <b>O</b>rganisations</p>
-            <a href="#BTS" class="fleche">
-              <p class="bienvenue">Bienvenue dans mon portfolio ▼</p>
-            </a>
           </div>
         </div>
       </div>
+        <a href="#presentation" class="nav_page">
+          Presentation
+          <span class="arrow">&#8595;</span> <!-- flèche vers le bas -->
+        </a>
     </section>
-    <section id="BTS">
-      <div class="PRESENTATIONetCAROUSEL">
-        <div class="presentationBTS">
-          <p class="BTSSIO">BTS SIO option Service Informatique aux Organisations</p>
-        </div>
-        <div class="carouselBTS">
-          <div class="carouselBTS-inner">
-            <div class="carouselBTS-item active">
-              <img src="image/LinuxWindows.png" alt="Linux et Windows" />
-              <div class="carouseltext">
-                <p>🐧Linux et Windows🪟</p>
-                <ul>
-                  <li>Administration Windows & Linux</li>
-                  <li>Installation, configuration, maintenance</li>
-                  <li>Intégration en environnement mixte</li>
-                  <li>Sécurité, gestion des utilisateurs, services réseau</li>
-                </ul>
-              </div>
-            </div>
-            <div class="carouselBTS-item">
-              <img src="image/switch.jpg" alt="Reseau" />
-              <div class="carouseltext">
-                <p>
-                  🌐 Réseaux Informatiques 🖧
-                </p>
-                <ul>
-                  <li>Configuration de routeurs et switches</li>
-                  <li>Gestion des sous-réseaux et adresses IP</li>
-                  <li>Installation et configuration de VPN</li>
-                  <li>
-                    Assurer la sécurité réseau et la gestion des pare-feux
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div class="carouselBTS-item">
-              <img
-                src="image/Programmationphoto.jpg"
-                alt="Langage de programmation"
-              />
-              <div class="carouseltext">
-                <p>
-                  💻 Programmation 🔤
-                </p>
-                <ul>
-                  <li>Découverte des bases : variables, boucles, conditions</li>
-                  <li>Pratique avec des projets concrets</li>
-                  <li>Compréhension de la programmation orientée objet</li>
-                  <li>Utilisation de Git et GitHub pour versionner le code</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <button class="prev" onclick="prevSlide()">
-            <img src="image/fleche gauche.png" alt="" />
-          </button>
-          <button class="next" onclick="nextSlide()">
-            <img src="image/fleche gauche.png" alt="" />
-          </button>
-        </div>
-      </div>
-    </section>
-    <section id="a_propos">
-      <div class="titre">En quelques phrases..</div>
+
+                                        <!-- MA PRESENTATION -->
+
+    <section id="presentation">
+      <div class="titre">PRESENTATION</div>
       <div class="image">
         <div class="text">
           <p>
@@ -155,25 +105,21 @@
         </div>
       </div>
     </section>
-    <section id="projets">
-      <div class="carouselPROJET">
-        <!-- https://www.youtube.com/watch?v=UchE1SjZrIQ&t=191s&ab_channel=ETCSCHOOL -->
-        <div class="titre">
-          <p>Quelques unes de mes réalisations</p>
-        </div>
-        <div class="cartePROJET">
-          <p class="nomPROJET">Projet</p>
-          <div class="imagecontainerPROJET">
-          <img src="image/google-page-daccueil.jpg" class="styleimagePROJET">
-          </div>
-          <div class="containerdetailPROJET">
-          <p class="detailPROJET">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias modi molestias iste quidem voluptatibus? Enim voluptate eaque quasi vel aut quidem impedit itaque sequi? </p>
-          <p class="detailPROJET">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias modi molestias iste quidem voluptatibus? Enim voluptate eaque quasi vel aut quidem impedit itaque sequi?</p>
-        </div>
-        </div>
-      </div>
+                                        <!-- SECTION CLASSE ET PARCOURS SCOLAIRE -->
+
+    <section id="parcours">
+      <H1>CLASSE ET PARCOURS SCOLAIRE</H1>
     </section>
-    <section id="competences">
+
+                                        <!-- SECTION CV -->
+
+    <section id ="CV">
+      <H1>CV ET CERTIFICAT DE TRAVAIL</H1>
+    </section>
+
+                                        <!-- SECTION COMPETENCES -->
+
+<section id="competences">
       <div class="titre">
         <p>Mes compétences</p>
       </div>
@@ -195,24 +141,17 @@
       </div>
       <div class="competences"></div>
     </section>
-    <section id="contact">
-      <div class="titre">Contact</div>
-      <div class="contact_content">
-        <p>Nom</p>
-        <div class="box nom_prenom" contenteditable="true">
-          <p>Nom et Prénom</p>
-        </div>
-        <p>Adresse Email</p>
-        <div class="box mail" contenteditable="true">
-          <p>adresse@gmail.com</p>
-        </div>
-        <p>Message</p>
-        <div class="box message" contenteditable="true">
-          <p>Tapez votre message ici..</p>
-        </div>
-        <button>Envoyer</button>
-      </div>
+
+                                            <!-- SECTION PROJETS (min 50vh)-->
+
+    <section id="projets">
+      <h1>PROJETS</h1>
     </section>
+
+                                            
+
+    
+                                            <!-- FOOTER -->
     <footer id="footer">
       <div class="footer-content">
         <p>&copy; 2025. Tous droits réservés.</p>

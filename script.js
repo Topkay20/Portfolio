@@ -1,3 +1,14 @@
+const nav = document.querySelector('.nav_container');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 10) {
+      nav.classList.add('shrink');
+    } else {
+      nav.classList.remove('shrink');
+    }
+  });
+
+
 
   let currentIndex = 0;
   const items = document.querySelectorAll('.carouselBTS-item');
